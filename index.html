@@ -132,42 +132,6 @@
         opacity:1;
     }
 
-    footer{
-        display: grid;
-        grid-template-areas: 
-        "logo email phone"
-        "logo contact contact"
-        "logo address address";
-        padding: 30px;
-    }
-
-    footer .logo {
-        grid-area: logo;
-        display: flex;
-        align-items:center;
-        justify-content: center;
-    }
-
-    footer .logo img {
-        width: 150px;
-    }
-
-    footer .contact {
-        grid-area: contact;
-    }
-
-    footer .address {
-        grid-area: address;
-    }
-
-    footer .email {
-        grid-area: email;
-    }
-
-    footer .phone {
-        grid-area: phone;
-    }
-
     @media(min-width:480px){
         .item:first-child {
             grid-area: 1 / 1 / span 2 / span 2;
@@ -297,15 +261,5 @@
     </section>
 
     <!--endregion-->
-
-    <footer id="contact">
-        <div class="logo">
-            <img src="/images/beer-taster.jpg" alt="">
-        </div>
-        <div class="email">johnd@gmail.com</div>
-        <div class="phone">(555)555-5555</div>
-        <div class="address">300 Corporate Dr.</div>
-        <div class="contact">John Doe</div>
-    </footer>
 </body>
 </html>
