@@ -45,7 +45,7 @@
         background-size: cover;
         background-attachment: fixed;
         position:relative;
-        /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); */
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     }
     .hero .cta {
         position:absolute;
@@ -81,11 +81,16 @@
         float: left;
         shape-outside: circle();
         margin: 10px;
+    }
 
+    .divider {
+        background:wheat;
+        height: 70px;
+        margin-top: 50px;
+        clip-path: polygon(100% 0, 100% 100%, 0 100%);
     }
 
     .gallery{
-        margin-top: 50px;
         padding: 20px;
         display: grid;
         grid-gap:10px;
@@ -224,6 +229,8 @@
             </p>
         </div>
     </section>
+
+    <div class="divider"></div>
 
     <!--Region Gallery-->
 
