@@ -13,31 +13,7 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         scroll-behavior: smooth;
     }
-    .menu{
-        height:100px;
-        z-index: 1;
-        background: rgba(255,255,255,0.75);
-        display: flex;
-        justify-content:space-around;
-        align-items: center;
-        border-bottom: solid lightgray 1px;
-        position:fixed;
-        width:100%;
-    }
-    .menu > ul {
-        list-style-type: none;
-    }
-    .menu > ul > li {
-        display: inline;
-    }
-    .menu > ul > li:not(:last-child):after {
-        content: '|';
-        margin: 0 10px;
-    }
-    .menu a {
-        text-decoration: none;
-        color: black;
-    }
+    
     .hero {
         height:700px;
         border-left:1px solid black;
@@ -130,45 +106,6 @@
 
     .item:hover figcaption {
         opacity:1;
-    }
-
-    footer{
-        display: grid;
-        grid-template-areas: 
-        "logo email phone"
-        "logo contact contact"
-        "logo address address";
-        padding: 30px;
-        color:#fbfade;
-        background: #2b2c31;
-    }
-
-    footer .logo {
-        grid-area: logo;
-        display: flex;
-        align-items:center;
-        justify-content: center;
-        clip-path: circle();
-    }
-
-    footer .logo img {
-        width: 150px;
-    }
-
-    footer .contact {
-        grid-area: contact;
-    }
-
-    footer .address {
-        grid-area: address;
-    }
-
-    footer .email {
-        grid-area: email;
-    }
-
-    footer .phone {
-        grid-area: phone;
     }
 
     @media(min-width:480px){
