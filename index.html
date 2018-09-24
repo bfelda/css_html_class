@@ -45,8 +45,7 @@
         background-size: cover;
         background-attachment: fixed;
         position:relative;
-        /* -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-        clip-path: polygon(100% 0, 0% 100%, 100% 100%); */
+        /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); */
     }
     .hero .cta {
         position:absolute;
@@ -86,12 +85,14 @@
     }
 
     .gallery{
-        margin: 50px 30px;
+        margin-top: 50px;
+        padding: 20px;
         display: grid;
         grid-gap:10px;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         grid-auto-rows: 250px 150px;
         grid-auto-flow: dense;
+        background: wheat;
     }
 
     .item {
@@ -110,7 +111,6 @@
     }
 
     .item figcaption {
-        /* display: none; */
         position:absolute;
         bottom:0;
         background: rgba(0,0,0,0.3);
